@@ -1,8 +1,8 @@
-*Version : 0.99*
+_Version : 0.99_
 
 It converts dBase files to sql scripts that can be imported into MySQL Database. It runs on console.
 
-*Usage*:
+_Usage_:
 Extract files from the dbf2sql package. dbf2sql.php and dbf_class.php are the required files.
 Open terminal.
 Change directory to where you have extracted the files.
@@ -12,8 +12,8 @@ output.sql is the output SQL script to be generated.
 
 Only the input file argument is mandatory. The script is able to predict the table name and the output filename.
 
-*Examples*:
-php dbf2sql.php input.dbf myData
+_Examples_:
+`php dbf2sql.php input.dbf myData`
 Since, output file name isn’t given, ‘myData.sql’ would be generated.
 
 `php dbf2sql.php data.dbf`
