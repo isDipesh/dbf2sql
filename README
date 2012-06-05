@@ -1,38 +1,23 @@
-There ain't no "Read ME Please". There's just FAQ!
+Version : 0.99
 
-FAQ:
+It converts dBase files to sql scripts that can be imported into MySQL Database. It runs on console.
 
-What is it called?
-dbf2sql v0.99
-
-What does it do?
-It converts FoxPro, dBase files with dbf extension to sql scripts that can be imported in MySQL Database.
-
-What actually is it?
-dbf2sql is a php script that runs on console, not browser.
-
-What are its Requirements?
-PHP should be installed.
-You must know what a console is, and how you basically use it?
-
-How do I use dbf2sql?
-Extract files from the dbf2sql package. db2sql and dbf_class.php are the required files.
-Fire up console.
+Usage:
+Extract files from the dbf2sql package. dbf2sql.php and dbf_class.php are the required files.
+Open terminal.
 Change directory to where you have extracted the files.
-Execute "php dbf2sql.php input.dbf tablename output.sql"
-where 'input.dbf' is assumed to be the dbf file to be converted, 'tablename' is the name of the table to be cerated in MySQL database,
-'output.sql' is the output file to be generated.
+Execute php dbf2sql.php <em>input</em>.dbf <em>tablename</em> <em>output</em>.sql
+where input.dbf is the dbf file to be converted, tablename is the name of the table that the generated SQL script should insert rows into.
+output.sql is the output SQL script to be generated.
 
-"php dbf2sql.php input.dbf myData"
-Since, output file name isn't given, 'myData.sql' would be generated.
+Only the input file argument is mandatory. The script is able to predict the table name and the output filename.
 
-"php dbf2sql.php data.dbf"
-This would create 'data.sql' script that would create a table named 'data'.
+Examples:
+php dbf2sql.php input.dbf myData
+Since, output file name isn’t given, ‘myData.sql’ would be generated.
 
+php dbf2sql.php data.dbf
+This would create ‘data.sql’ script that would create a table named ‘data’.
 
-Sorry for any bad English encountered, because my mother tongue NEPALi is.
-
-Homepage:
-http://motorscript.com/go/dbf2sql
-Contact me:
-http://twitter.com/xtranophilist
+php dbf2sql.php --bulk OR php dbf2sql.php --all
+Converts all dbf files on current directory to sql scripts.
