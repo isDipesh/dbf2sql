@@ -6,7 +6,7 @@ __Usage__:
 Extract files from the dbf2sql package. dbf2sql.php and dbf_class.php are the required files.
 Open terminal.
 Change directory to where you have extracted the files.
-Execute php dbf2sql.php <em>input</em>.dbf <em>tablename</em> <em>output</em>.sql
+Execute php dbf2sql.php _input_.dbf _tablename_ _output_.sql
 where input.dbf is the dbf file to be converted, tablename is the name of the table that the generated SQL script should insert rows into.
 `output.sql` is the output SQL script to be generated.
 
