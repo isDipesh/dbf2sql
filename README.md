@@ -12,7 +12,7 @@ where input.dbf is the dbf file to be converted, tablename is the name of the ta
 
 Only the input file argument is mandatory. The script is able to predict the table name and the output filename.
 
-_Examples_:
+__Examples__:
 
 `php dbf2sql.php input.dbf myData`
 
