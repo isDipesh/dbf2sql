@@ -3,9 +3,6 @@
 
 /*
 dbf2sql - dbf to sql converter
-coded by xtranophilist
-xtranophilist [at] gmail [dot] com
-http://twitter.com/xtranophilist
 utilizes DBF reader Class by Faro K Rasyid
 */
 
@@ -201,3 +198,4 @@ convert($in,$table_name,$out);
 
 bye();
 ?>
+
